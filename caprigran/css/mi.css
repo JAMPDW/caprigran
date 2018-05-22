@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Karla|Quicksand");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  vertical-align: middle; }
+
+body, html {
+  font-family: "Karla", sans-serif;
+  font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif; }
+
+.numeros {
+  font-family: "Quicksand", sans-serif; }
+
+a {
+  font-size: 15px;
+  color: #333;
+  transition: all 0.5s ease; }
+
+a:hover {
+  color: #333; }
+
+.img-responsive {
+  max-width: 100%; }
+
+/*SCCROLL BAR*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0);
+  border-radius: 5px;
+  background-color: transparent; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0);
+  background-color: #333333; }
+
+/*CABECERA*/
+section#header {
+  width: 100%;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; }
+
+div.menu2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  justify-content: flex-end;
+  padding: 10px 0px; }
+
+div.menu2 div {
+  justify-content: flex-end; }
+
+div.menu2 a {
+  color: #fff; }
+
+section#header div.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+
+section#header div.logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+section#header div.logo a:hover {
+  text-decoration: none; }
+
+section#header div.logo span {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: 50px;
+  text-align: center;
+  font-size: 1rem; }
+
+section#header div.logo img {
+  max-width: 25%; }
+
+section#header nav {
+  margin-left: auto; }
+
+section#header nav .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+section#header nav .navbar-nav div.menu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5px 0px; }
+
+section#header nav .navbar-nav div.menu1 {
+  order: 2; }
+
+section#header nav .navbar-nav div.menu2 {
+  order: 1; }
+
+section#header nav a {
+  border-bottom: 2px solid #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem; }
+
+section#header nav a:hover {
+  color: #333;
+  border-bottom: 2px solid #F2B809; }
+
+.a_on {
+  font-weight: bold; }
+
+.icon {
+  font-family: "Ionicons"; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: #333; }
+
+::selection {
+  color: #fff;
+  background-color: #333; }
+
+/*SLIDER PRINCIPAL*/
+#carousel_principal .carousel-inner {
+  max-height: 85vh;
+  filter: brightness(90%); }
+
+#carousel_principal .carousel-caption {
+  bottom: 50%;
+  top: 44%; }
+
+#carousel_principal .carousel-caption h2 {
+  font-size: 5rem; }
+
+#carousel_principal .carousel-caption h2:first-letter {
+  color: #F2B809; }
+
+.carousel-indicators li {
+  width: 75px;
+  height: 7px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 7px;
+  margin-left: 7px; }
+
+.carousel-indicators .active {
+  background-color: #fff; }
+
+.carousel-indicators li:hover {
+  background-color: #fff; }
+
+.carousel-control-prev span, .carousel-control-next span {
+  font-size: 3rem;
+  color: #F2B809; }
+
+/*NOTICIAS INICIO*/
+section#noticias {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0px;
+  width: 100%; }
+
+section#noticias h2 {
+  border-bottom: 2px solid #F2B809;
+  margin-bottom: 50px; }
+
+section#noticias a.a_noticias {
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 5px 0px;
+  /*border-bottom: 2px solid $naranja;*/ }
+
+section#noticias a.a_noticias:hover {
+  /*border-bottom: 2px solid $naranja;*/
+  text-decoration: none; }
+
+.a_noticias::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #F2B809;
+  transition: width 0.3s, background 0.3s; }
+
+.a_noticias:hover::after {
+  width: 100%;
+  height: 2px;
+  background: #F37402; }
+
+section#noticias div.ult_noticias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px; }
+
+section#noticias div.ult_noticias > div {
+  flex-basis: 50%; }
+
+section#noticias div.noticias_anteriores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+section#noticias div.ult_noticias article {
+  position: relative;
+  width: 100%; }
+
+section#noticias div.ult_noticias article.ultima_noticia {
+  padding: 5px; }
+
+section#noticias div.ult_noticias article img {
+  max-width: 100%; }
+
+section#noticias div.ult_noticias article span {
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  z-index: 99;
+  position: absolute; }
+
+section#noticias div.ult_noticias article.ultima_noticia span.fecha_ext {
+  bottom: 20px;
+  left: 30px; }
+
+section#noticias div.ult_noticias article.ultima_noticia span.titulo {
+  bottom: 50px;
+  left: 30px;
+  line-height: 30px;
+  padding-right: 15px;
+  font-size: 2rem;
+  font-weight: 700; }
+
+section#noticias div.ult_noticias article.ultima_noticia span.categoria {
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  background-color: #F37402; }
+
+section#noticias div.ult_noticias article.noticia_anterior span.fecha_ext {
+  bottom: 5px;
+  left: 15px; }
+
+section#noticias div.ult_noticias article.noticia_anterior span.titulo {
+  bottom: 30px;
+  left: 15px;
+  line-height: 15px;
+  padding-right: 10px;
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+section#noticias div.ult_noticias article.noticia_anterior span.categoria {
+  top: 5px;
+  right: 5px;
+  padding: 2px 5px;
+  background-color: #F37402; }
+
+/*SERVICIOS INICIO*/
+section#servicios {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0px;
+  width: 100%; }
+
+section#servicios div.menu-servicios {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between; }
+
+section#servicios div.menu-servicios div.servicios {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+section#servicios div.menu-servicios div.servicios:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #F2B809;
+  display: block; }
+
+section#servicios div.menu-servicios div.servicios a {
+  margin-left: 50px;
+  margin-right: 10px;
+  font-weight: 600;
+  text-decoration: none; }
+
+section#servicios div.menu-servicios div.servicios a.activo:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  position: relative;
+  top: 9px; }
+
+section#servicios div.servicio {
+  padding: 35px 50px;
+  width: 100%; }
+
+section#servicios div.servicio div.mask-image-1 {
+  width: 100%;
+  height: 500px;
+  z-index: 50;
+  background: url(../img/servicios/servicio_1.jpg) no-repeat center center;
+  background-size: cover;
+  filter: brightness(95%); }
+
+/*FOOTER*/
+footer#pie {
+  width: 100%;
+  padding: 30px 0px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+  border-top: 1px solid #333;
+  font-family: "Karla", sans-serif; }
+
+footer#pie > div {
+  display: flex;
+  flex-direction: row; }
+
+footer#pie div.secciones {
+  padding: 0px 30px; }
+
+footer#pie div.secciones h3 {
+  margin-top: 5px;
+  margin-bottom: 60px;
+  font-family: "Karla", sans-serif; }
+
+footer#pie div.secciones div:first-child {
+  display: flex;
+  flex-direction: column; }
+
+footer#pie div.secciones div:last-child {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  filter: grayscale(60%); }
+
+footer#pie div.secciones div:last-child div.izq {
+  margin-right: 20px; }
+
+footer#pie div.patrocinadores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px; }
+
+footer#pie div.patrocinadores a {
+  margin-right: 150px; }
+
+footer#pie div.patrocinadores a:last-child {
+  margin-right: 0px; }
+
+footer#pie div.patrocinadores img {
+  max-width: 100%; }
+
+footer#pie small {
+  margin-top: 50px;
+  text-align: center; }
+
+/*# sourceMappingURL=mi.css.map */
